@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dogs Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>INST377 - Dogs!</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="Assignment2-Stocks.html">Stocks</a>
+        <a href="Assignment2-Dogs.html">Dogs</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Dogs! 🐶</h2>
+
+      <div class="slider-wrapper">
+        <button id="prevBtn">←</button>
+        <div class="slider" id="dogCarousel"></div>
+        <button id="nextBtn">→</button>
+      </div>
+
+      <div id="breedButtons" class="breed-buttons"></div>
+
+      <div id="breedInfo" class="hidden breed-card">
+        <h3 id="breedName"></h3>
+        <p id="breedDesc"></p>
+        <p><strong>Min Life:</strong> <span id="minLife"></span></p>
+        <p><strong>Max Life:</strong> <span id="maxLife"></span></p>
+      </div>
+
+      <div class="voice-commands">
+        <h3>In this web page there are options to Navigate using Audio!</h3>
+        <p>Ensure your Mic is enabled to be able to use this feature</p>
+        <ul style="text-align: left">
+          <li>
+            <strong>Load Dog Breed</strong><br />Say: Load Dog Breed &lt;Dog
+            Breed Name&gt;
+          </li>
+          <li>
+            <strong>Navigate to a Different Page</strong><br />Say: Navigate to
+            &lt;page&gt;
+          </li>
+          <li>
+            <strong>Change the Page Color</strong><br />Say: Change the color to
+            &lt;color&gt;
+          </li>
+          <li><strong>Say Hello Back to you!</strong><br />Say: Hello</li>
+        </ul>
+        <div class="voice-buttons">
+          <button onclick="annyang.start()">Turn On Listening</button>
+          <button onclick="annyang.abort()">Turn Off Listening</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Assignment 2 - Spring 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
