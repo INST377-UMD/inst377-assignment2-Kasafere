@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INST377 - Assignment 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>INST377 - Activities</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="Assignment2-Stocks.html">Stocks</a>
+        <a href="Assignment2-Dogs.html">Dogs</a>
+      </nav>
+    </header>
+
+    <main id="app">
+      <h2>These are some different activities we can try!</h2>
+      <button id="stocksBtn">Stocks</button>
+      <button id="dogsBtn">Dogs</button>
+
+      <div id="quoteBox">
+        <p id="quoteText"><em>Loading quote...</em></p>
+      </div>
+
+      <div class="voice-commands">
+        <h3>In this web page there are options to Navigate using Audio!</h3>
+        <p>Ensure your Mic is enabled to be able to use this feature</p>
+        <ul style="text-align: left">
+          <li>
+            <strong>Navigate to a Different Page</strong><br />Say: Navigate to
+            &lt;page&gt;
+          </li>
+          <li>
+            <strong>Change the Page Color</strong><br />Say: Change the color to
+            &lt;color&gt;
+          </li>
+          <li><strong>Say Hello Back to you!</strong><br />Say: Hello</li>
+        </ul>
+        <div class="voice-buttons">
+          <button onclick="annyang.start()">Turn On Listening</button>
+          <button onclick="annyang.abort()">Turn Off Listening</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Assignment 2 - Spring 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
